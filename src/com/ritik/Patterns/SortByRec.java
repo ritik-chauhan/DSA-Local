@@ -27,4 +27,16 @@ public class SortByRec {
             Selection(arr, r-1, 0, 0);
         }
     }
+
+    static void Bubble(int r, int c) {
+        if(r ==0)
+            return;
+        if(c < r) {
+            System.out.print("*");
+            Bubble(r, c + 1);
+        } else {
+            System.out.println();
+            Bubble(r-1, 0);
+        }
+    }
 }
