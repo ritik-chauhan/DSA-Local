@@ -1,4 +1,4 @@
-package com.ritik.Patterns;
+package com.ritik.patterns;
 
 import java.util.Arrays;
 

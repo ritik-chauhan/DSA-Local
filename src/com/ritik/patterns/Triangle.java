@@ -1,4 +1,4 @@
-package com.ritik.Patterns;
+package com.ritik.patterns;
 
 public class Triangle {
     public static void main(String[] args) {
