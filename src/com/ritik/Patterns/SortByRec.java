@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class SortByRec {
     public static void main(String[] args) {
         int[] arr = {12,11,10,9,8};
-        Selection(arr, arr.length, 0, 0);
+        //Selection(arr, arr.length, 0, 0);
+        Bubble(arr, arr.length-1, 0);
         System.out.println(Arrays.toString(arr));
     }
 
@@ -28,15 +29,19 @@ public class SortByRec {
         }
     }
 
-    static void Bubble(int r, int c) {
+    static void Bubble(int[] arr, int r, int c) {
         if(r ==0)
             return;
         if(c < r) {
-            System.out.print("*");
-            Bubble(r, c + 1);
+            if(arr[c] > arr[c+1]) {
+                int temp=arr[c];
+                arr[c]=arr[c+1];
+                arr[c+1]=temp;
+            }
+            Bubble(arr, r, c + 1);
         } else {
-            System.out.println();
-            Bubble(r-1, 0);
+
+            Bubble(arr, r-1, 0);
         }
     }
 }
