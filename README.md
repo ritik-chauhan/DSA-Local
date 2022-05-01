@@ -1,2 +1,3 @@
 # DSA-Local
-My DSA repository that I will push to as fast as I learn
+My DSA repository that follows a DSA Java Bootcamp from YouTube.
+
